@@ -1,0 +1,330 @@
+
+// function bigThenTean(test:number){
+  
+//     let num:number=test;
+//     if(num>10){
+//         return console.log(`nume${num} is gretter then 10`)
+//     }
+
+//     else
+//    return  console.log(`nume${num} is less then 10`)
+    
+// }
+
+// bigThenTean(50)
+
+
+
+
+// function equalThenTean(test2:number){
+  
+//     let num:number=test2;
+//     if(num>10){
+//          console.log(`nume${num} is gretter then 10`)
+//     }
+
+//     else if(num<10){
+//          console.log(`nume${num} is less then 10`)
+//     }
+
+//     else
+//     console.log(`nume${num} is equal to 10`)
+    
+// }
+
+
+
+// function whoBigger(num1:number,num2:number){
+
+//     if(num1>num2){
+//         console.log(num1+"bigger")
+//     }
+// else if(num1<num2){
+//     console.log(num2+"bigger")
+
+// }
+// else
+// console.log("values are equals")
+
+// }
+
+// //4
+// function getMinNumber(num1:number,num2:number):Number{
+
+//     if(num1>num2){
+//       return num2;
+//     }
+//     else{
+//       return num1
+//     }
+//   }
+  
+//   console.log(getMinNumber(10,50))
+
+// //5
+// function getMinNumber2(num1:number,num2:number,num3:number):Number{
+
+//     if(num1<num2&&num1<num3){
+//       return num1;
+//     }
+//     else if(num2<num1&&num2<num3){
+//       return num2
+//     }
+  
+//     else
+//     return num3
+//   }
+//   //7
+//   console.log(getMinNumber2(86,50,20))
+
+//   function avrage (num1:number,num2:number,num3:number):Number{
+//     let sum=num1+num2+num3
+//     return sum/3
+//     }
+    
+//     console.log(avrage(10,10,10));
+// //8
+// function sumall (num1:number,num2:number,num3:number,num4:number):Number{
+//     let sum=num1+num2+num3+num4
+//     return sum
+//     }
+    
+//     console.log(sumall(4,5,8,9));
+
+//     //9
+//     function avg(array:number[]):Number{
+//         let sum:number=0;
+//         array.forEach(item=>{
+        
+//         sum+=item;
+            
+//         })
+        
+//         return sum/array.length
+//         }
+        
+        
+//         const array1:number[]=[1,10,12,34,45,6]
+        
+//         console.log(avg(array1))
+
+// //10
+
+// function sum (array:number[]):Number{
+//     let sum:number=0;
+//     array.forEach(item=>{
+    
+//     sum+=item;
+        
+//     })
+    
+//     return sum
+//     }
+    
+    
+//     const array1:number[]=[1,10,12,34,45,6]
+    
+//     console.log(avg(array1))
+
+
+//11
+
+
+//12
+// function nameA (array:string[]):String{
+//     let savee:string;
+//     array.forEach(item=>{
+    
+//     if(item.charAt(0)=="A"){
+    
+//         savee=item
+//     }
+    
+//     })
+//     return savee;
+//     }
+    
+//     const array1:string[]=["avi","Aaime","jakon","mir"]
+    
+//     console.log(nameA(array1))
+
+//13
+// function positiv (array:number[]):void{
+//     let counter:number=0;
+// array.forEach(item=>{
+
+// if(Math.round(item)%2==0){
+// counter++}
+
+// })
+
+// if(counter>0){
+//     return "yess"
+// }
+// }
+
+// const array1:number[]=[7.5,4.6,8.9,]
+
+// console.log(positiv(array1))
+
+//14
+
+// function getDdate(strr:string):String{
+//     let today=new Date(strr)
+//     return today;
+    
+//     }
+    
+    
+//     console.log(getDdate("4/14/1999 08:48"))
+
+
+//15
+// function printxtime(strr:string,num:number):String{
+
+//     for(let i=0;i<num;i++){
+    
+//     console.log(strr)
+//     }
+    
+//     }
+    
+    
+//     printxtime("hekooo",8)
+
+//16
+// function welcom(strr:string,num:number):any{
+//     if(num>18){
+//      return   console.log("welcom "+strr)
+//     }
+    
+//     }
+    
+    
+//     welcom("hekooo",88)
+// //17
+// function Sameword(strr:string,strr2:string):any{
+
+//     if(strr.charAt(0).toLowerCase()==strr2.charAt(0).toLowerCase()){
+//     return strr2.charAt(0)
+    
+//     }
+//     else
+//     return "no"
+    
+//     }
+    
+//     console.log(Sameword("Bvi","bmor"))
+    
+//18
+// function arryhasItems(strr:string[]){
+
+
+//     switch(strr.length){
+//         case 0:
+//         return"empty"
+//           case 1:
+//        return "one"
+//         ;
+//           case 2:
+//         return"two"
+//         ;
+//           case 3:
+//     return"alot"
+        
+    
+//     }
+    
+    
+//     }
+    
+//     console.log(arryhasItems(["avi","a"]))
+    
+//19
+// function arryOrder(num:number[] ,text:string):any{
+
+
+//     switch(text){
+//         case "reverse":
+//         return num.reverse()
+//           case "orderUp":
+//        return num.sort((a,b)=>a-b)
+//         ;
+//           case "orderDown":
+//         return num.sort((a,b)=>b-a)
+//         ;
+//               case "text":
+//         return num.toString()
+    
+        
+    
+//     }
+    
+    
+//     }
+    
+//     console.log(arryOrder([3,44,55,7,88,9],"text"))
+    
+    
+//20
+
+
+
+// function orederAny(arraya:any[]):any{
+//     const array1:number[]=[]
+//     const array2:string[]=[]
+//     const array3:boolean[]=[]
+    
+    
+//         arraya.forEach(item=>{
+//     switch(typeof item){
+    
+//         case "number":
+//         array1.push(item)
+//     break
+//         case "string":
+//         array2.push(item)
+//         break
+//         case "boolean":
+//         array3.push(item);
+//     break
+    
+//     }
+    
+//         })
+//        return array1.concat(array2,array3)
+//     }
+    
+    
+//     console.log(orederAny(["avi",7,8,"go",true]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
