@@ -299,14 +299,200 @@
 //     console.log(orederAny(["avi",7,8,"go",true]))
 
 
+//21
+// function fanmeAndLname(fname:string,lname?:string){
+
+//     lname?console.log(`${fname} ${lname}`):console.log(`${fname}`)
+    
+//     }
+    
+//     fanmeAndLname("avi","aa")
+
+
+//22
+// function fullNameAndEmail(fullname:string,email?:String){
+
+//     email?console.log(`${fullname} ${email}`):console.log(`${fullname}`)
+// }
+
+// fullNameAndEmail("moradd" ,"mko@")
+//23
+
+// function CatDetailes(age:number=0,typeOfcat:string,catName?:string){
+
+//     catName?console.log(`${catName} ${age} ${typeOfcat}`):console.log(`${age} ${typeOfcat}`)
+// }
+
+
+// CatDetailes(42,"asian")
+
+//24
+
+// function textAndBoolean(text:string,isWaht:boolean=true):string{
+
+//     return isWaht?`hello ${text}`:`welcome ${text}`
+//  }
+ 
+//  console.log(textAndBoolean("moti"))
+
+
+//25
+// function oneText(fname:string,lname:string="miss"):string{
+
+//     return `${fname} ${lname}`
+//  }
+ 
+//  console.log(oneText("mor"))
 
 
 
+//26
+
+// function printText(text1:string,num:number=1,text2?:string){
 
 
+//     for(let i=0;i<num;i++){
+ 
+//      text2?  console.log(`${text1}\n ${text2}`): console.log(`${text1}`)
+//     }
+//  }
+ 
+ 
+//  printText("moradsad",5,"adsdasdasdas")
+
+//
+// function manyLonleyChars(...cahrs:string[]){
+
+//     cahrs?console.log(cahrs.sort()):console.log("emapty")
+//     }
+    
+//     manyLonleyChars('f','g','o','a')
+//28
+// function manyNumber(...nums:number[]){
+
+//     nums?console.log(nums.sort((a,b)=>a-b)):console.log("emapty")
+//     }
+    
+//     manyNumber(4,5,8,12,3)
+
+//29
+// function manyNumber(...nums:number[]){
+
+//     nums?console.log(nums.sort((a,b)=>b-a)):console.log("emapty")
+//     }
+    
+//     manyNumber(4,5,8,12,3)
+
+//34
+// class vihicle{
+//     company:string;
+//     model:string;
+//     color:string;
+ 
+//     constructor(company:string,model:string,color:string){
+//        this.company=company;
+//        this.model=model;
+//        this.color=color;
+//     }
+//  }
+
+//35
+// class elelpent{
+//     height:string;
+//     typeOfanimeal:string;
+//     age:number;
+//     country:string;
+ 
+//     constructor(height:string,typeOfanimeal:string,age:number,country:string){
+ 
+//        this.height=height;
+//        this.typeOfanimeal=typeOfanimeal;
+//        this.age=age;
+//        this.country=country;
+//     }
+ 
+ 
+ 
+//     getDetails(){
+//        return `${this.height} ${this.typeOfanimeal} ${this.age} ${this.country}`
+//     }
+//  }
+
+//36
+
+// class pants{
+
+//     size:number=0
+//     color:string=""
+//     typeOffabric:string=""
+//     height:number=0;
+//     isavilbel:boolean=true;
+ 
+//     constructor(size:number,color:string,typeOffabric:string,height:number,isavilbel:boolean){
+//        this.size=size;
+//        this.color=color;
+//        this.typeOffabric=typeOffabric;
+//        this.height=height;
+//        this.isavilbel=isavilbel;
+//     }
+ 
+ 
+//     private getDetails{
+       
+//     }
+ 
+//  }
 
 
-
+//37
+// class athlets{
+//     fullName:string="";
+//     birthday:string="";
+//     branch:string="";
+//     sex?:string="";
+ 
+ 
+ 
+//  get getfullname():string{
+    
+//     return setfullname();
+//  }
+ 
+//  set setfullname(name:string){
+//      this.fullName=name
+//  }
+ 
+//  get getbirthday():string{
+    
+//     return setbirthday();
+//  }
+ 
+//  set setbirthday(birth:string){
+//      this.birthday=birth
+//  }
+ 
+//  get getbranch():string{
+    
+//     return setbranch();
+//  }
+ 
+//  set setbranch(barnch:string){
+//      this.branch=barnch
+//  }
+ 
+//  get getsex():string{
+    
+//     return setsex();
+//  }
+ 
+//  set setsex(sex:string){
+//      this.sex=sex
+//  }
+ 
+ 
+ 
+ 
+//  }
 
 
 
