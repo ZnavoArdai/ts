@@ -437,70 +437,132 @@
 //     }
  
  
-//     private getDetails{
-       
+//     private getDetails(){ 
+ 
+//        return `${this.size} ${this.color} ${this.typeOffabric} ${this.height} ${this.isavilbel}`
+ 
 //     }
  
 //  }
 
 
-//37
-// class athlets{
+//37+38
+
+
+// class Athlets{
 //     fullName:string="";
 //     birthday:string="";
 //     branch:string="";
 //     sex?:string="";
  
+//  constructor(fullName:string,birthday:string,branch:string,sex?:string){
+
+//     this.fullName=fullName;
+//     this.birthday=birthday;
+//     this.branch=branch;
+//     this.sex=sex;
+//  }
+ 
+
+//  protected getDetailes(){
+//     return `${this.fullName} ${this.birthday} ${this.branch} ${this.sex}`
+//  }
+
+// }
+
+
+// class Fotballers extends Athlets{
+
+// team:string="";
+// isStatePlayers:boolean=true
+//    constructor(fullName:string,birthday:string,branch:string,sex:string,team:string,isStatePlayers:boolean){
+
+//       super(fullName,birthday,branch,sex)
+//       this.team=team
+//       this.isStatePlayers=isStatePlayers
+//    }
+
+
+
+//  protected getDetailes(){
+//     return `${super.getDetailes()} ${this.team} ${this.isStatePlayers}`
+//  }
+
+//  printdetaile(){
+//     return this.getDetailes();
+//  }
+// }
+
+
+
+// const one=new Fotballers("avi hid","31/12","a1","male","hapoel",false);
+
+// console.log(one.printdetaile())
+
+
+
+
+
+
+
+//39
+class User{
+    fullname:string=""
+    age:number=0;
+ password:number=0
+ private isconaectd:boolean=true;
+ 
+ constructor(fullname:string,age:number,password:number){
+    this.fullname=fullname;
+    this.age=age;
+    this.password=password;
+ }
  
  
-//  get getfullname():string{
+ 
+ set setisconect(isonect:boolean){
+ 
+ this.isconaectd=isonect;
+ 
+ }
+ 
+ 
+ get getisconect():boolean{
+    return this.setisconect;
+ }
+ 
+ 
+ static olderUser(...ages:User[]){
+ let min=ages[0].age
+ let name:string=""
+ for(const i of ages){
+ 
     
-//     return setfullname();
-//  }
+ if(min>i.age){
  
-//  set setfullname(name:string){
-//      this.fullName=name
-//  }
- 
-//  get getbirthday():string{
+    min=i.age
     
-//     return setbirthday();
-//  }
+ }
  
-//  set setbirthday(birth:string){
-//      this.birthday=birth
-//  }
+ if(i.age==min){
+    name=i.fullname
+ }
  
-//  get getbranch():string{
-    
-//     return setbranch();
-//  }
+ }
  
-//  set setbranch(barnch:string){
-//      this.branch=barnch
-//  }
+ console.log(min,name)
+ }
+ }
  
-//  get getsex():string{
-    
-//     return setsex();
-//  }
- 
-//  set setsex(sex:string){
-//      this.sex=sex
-//  }
+ const one=new User("mori npp",75,4651324545)
+ const one1=new User("afi npp",15,4651324545)
+ const one2=new User("roman npp",4,4651324545)
+ const one3=new User("donald npp",36,4651324545)
  
  
+ one.setisconect=true
  
- 
-//  }
-
-
-
-
-
-
-
-
+ console.log(User.olderUser(one,one1,one2,one3))
 
 
 
