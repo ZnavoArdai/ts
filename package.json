@@ -1,0 +1,23 @@
+{
+  "name": "17_7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": " tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZnavoArdai/ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZnavoArdai/ts/issues"
+  },
+  "homepage": "https://github.com/ZnavoArdai/ts#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

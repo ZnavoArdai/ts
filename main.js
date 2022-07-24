@@ -1,21 +1,21 @@
 
 
 
-function factorian(num){
+// function factorian(num){
 
-let sum=1;
+// let sum=1;
 
 
-for (let i =num; i>1; ) {
-sum+=i
-;
-num--
+// for (let i =num; i>1; ) {
+// sum+=i
+// ;
+// num--
     
-}
+// }
 
-console.log(sum)
+// console.log(sum)
 
-}
+// }
 
 
-factorian(4)
+// factorian(4)

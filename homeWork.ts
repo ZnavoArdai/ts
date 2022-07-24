@@ -506,6 +506,69 @@
 
 
 //39
+// class User{
+//     fullname:string=""
+//     age:number=0;
+//  password:number=0
+//  private isconaectd:boolean=true;
+ 
+//  constructor(fullname:string,age:number,password:number){
+//     this.fullname=fullname;
+//     this.age=age;
+//     this.password=password;
+//  }
+ 
+ 
+ 
+//  set setisconect(isonect:boolean){
+ 
+//  this.isconaectd=isonect;
+ 
+//  }
+ 
+ 
+//  get getisconect():boolean{
+//     return this.setisconect;
+//  }
+ 
+ 
+//  static olderUser(...ages:User[]){
+//  let min=ages[0].age
+//  let name:string=""
+//  for(const i of ages){
+ 
+    
+//  if(min>i.age){
+ 
+//     min=i.age
+    
+//  }
+ 
+//  if(i.age==min){
+//     name=i.fullname
+//  }
+ 
+//  }
+ 
+//  console.log(min,name)
+//  }
+//  }
+ 
+//  const one=new User("mori npp",75,4651324545)
+//  const one1=new User("afi npp",15,4651324545)
+//  const one2=new User("roman npp",4,4651324545)
+//  const one3=new User("donald npp",36,4651324545)
+ 
+ 
+//  one.setisconect=true
+ 
+//  console.log(User.olderUser(one,one1,one2,one3))
+
+
+//39
+
+
+
 class User{
     fullname:string=""
     age:number=0;
@@ -519,6 +582,10 @@ class User{
  }
  
  
+ get getisconect():boolean{
+ 
+    return this.isconaectd;
+ }
  
  set setisconect(isonect:boolean){
  
@@ -527,33 +594,28 @@ class User{
  }
  
  
- get getisconect():boolean{
-    return this.setisconect;
- }
  
- 
- static olderUser(...ages:User[]){
- let min=ages[0].age
- let name:string=""
- for(const i of ages){
- 
-    
- if(min>i.age){
- 
-    min=i.age
-    
- }
- 
- if(i.age==min){
-    name=i.fullname
- }
- 
- }
- 
- console.log(min,name)
- }
- }
- 
+ static olderUser(uuserChoise?:string,...ages:User[]){
+
+
+   if(uuserChoise=="young"){
+
+     return ages.sort((a,b)=> a.age-b.age)[0].fullname
+   }
+
+   
+   else if(uuserChoise=="old"){
+
+      return ages.sort((a,b)=> b.age-a.age)[0].fullname
+    }
+
+    else
+    return "no parametr"
+}
+}
+
+
+
  const one=new User("mori npp",75,4651324545)
  const one1=new User("afi npp",15,4651324545)
  const one2=new User("roman npp",4,4651324545)
@@ -562,17 +624,47 @@ class User{
  
  one.setisconect=true
  
- console.log(User.olderUser(one,one1,one2,one3))
+ console.log(User.olderUser("young",one1,one2,one3,one))
 
 
+//40
 
 
+class Student extends User{
+
+   fname:string=""
+   lname:string=""
+   email:string=""
+   constructor(age:number,password:number,fname:string,lname:string,email:string){
+ 
+      super(fname+lname,age,password)
+      this.fname=fname;
+      this.lname=lname;
+      this.email=email;
+   }
 
 
+   gedetails(){
+
+      return `${this.fullname} ${this.age} ${this.email}`
+   }
+
+   ison(){
+      
+      if(this.getisconect){
+         return "green"
+      }
+      return "red"
+   }
+}
 
 
+const student1:Student=new Student(12,3123,"znavo","ardai","vcsjahc@f")
 
-    
+student1.setisconect=true
+console.log(student1.ison())
+
+
     
 
     
